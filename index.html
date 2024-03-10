@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Game</title>
+</head>
+<body>
+    <canvas id="game-canvas" width="800" height="700"></canvas>
+    <div id="game_options">
+        <form action="">
+            <div>Выберите режим сложности игры: </div>
+            <div><input type="radio" name="difficulty" value="easy"> Легкий</div>
+            <div><input type="radio" name="difficulty" value="medium" checked> Средний</div>
+            <div><input type="radio" name="difficulty" value="hard"> Сложный</div>
+            
+            <div>
+                <button id="start-button" onclick="StartGame()">Старт</button>
+                <button id="stop-button">Стоп</button>
+            </div>
+        </form>
+    </div>
+    <div id="records">
+        <div id="records__title">Рекорды: </div>
+        <div id="easy-record"></div>
+        <div id="medium-record"></div>
+        <div id="hard-record"></div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
